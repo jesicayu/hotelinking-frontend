@@ -35,8 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-Before you run the frontend of this project, please make sure you have followed the steps of the README of this repository:  and that you have the project running!
+Before you run the frontend of this project, please make sure you have followed the steps of the README of [Hotelinking backend](https://github.com/jesicayu/hotelinking-backend) and that you have the project running!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,8 +51,8 @@ Before you run the frontend of this project, please make sure you have followed 
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Bulma][Bulma]][Bulma-url]
 * [![Redux][Redux]][Redux-url]
+* [![Bulma][Bulma]][Bulma-url]
 * [![Vite][Vite]][Vite-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
