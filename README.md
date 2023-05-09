@@ -69,19 +69,19 @@ In order to run this project, you need to first install:
 
 ### Installation
 
-2. Clone the repo
+1. Clone the repo
    ```
    git clone https://github.com/jesicayu/hotelinking-frontend
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```
    npm install
    ```
-4. Start the app!
+3. Start the app!
    ```
    npm run dev
    ```
-5. The app will be running on:
+4. The app will be running on:
    ```
    http://localhost:5173/
    ```
