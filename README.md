@@ -68,23 +68,19 @@ In order to run this project, you need to first install:
 
 2. Clone the repo
    ```
-   git clone https://github.com/jesicayu/TMDB
+   git clone https://github.com/jesicayu/hotelinking-frontend
    ```
 3. Install NPM packages
    ```
    npm install
    ```
-4. Enter your API in the `keys.js` file, within the config folder
+4. Start the app!
    ```
-   const API_KEY = 'ENTER YOUR API';
+   npm run dev
    ```
-5. Create your local database
+5. The app will be running on:
    ```
-   createdb tmdb
-   ```
-6. Start the app!
-   ```
-   npm start
+   http://localhost:5173/
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -92,7 +88,7 @@ In order to run this project, you need to first install:
 <!-- CONTACT -->
 ## Contact
 
-Project Link: https://github.com/jesicayu/TMDB
+Project Link: https://github.com/jesicayu/hotelinking-frontend
 <br/>
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -124,7 +120,7 @@ Project Link: https://github.com/jesicayu/TMDB
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Redux]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
-[Redux.url]: https://redux.js.org/
+[Redux-url]: https://redux.js.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
