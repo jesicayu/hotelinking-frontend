@@ -65,6 +65,7 @@ Before you run the frontend of this project, please make sure you have followed 
 In order to run this project, you need to first install:
 
 - Node.js
+- npm
 
 ### Installation
 
