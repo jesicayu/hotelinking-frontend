@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 import useInput from "../../hooks/useInput";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 export const Registration = () => {
   const navigate = useNavigate();
@@ -24,7 +25,10 @@ export const Registration = () => {
           withCredentials: true,
         }
       )
-      .then(() => navigate("/login"))
+      .then(() => {
+        toast.success("User registered successfully!");
+        navigate("/login");
+      })
       .catch((error) => console.error(error));
   };
 
@@ -86,7 +90,7 @@ export const Registration = () => {
           register
         </Button>
         <Typography sx={{ mt: 3 }}>
-          <Link to="/login">Already have an account? Sign up here</Link>
+          <Link to="/login">Already have an account? Log in here</Link>
         </Typography>
       </Box>
     </Box>

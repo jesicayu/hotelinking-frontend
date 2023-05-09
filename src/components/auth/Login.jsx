@@ -2,10 +2,16 @@ import { Button, Box, TextField, Typography } from "@mui/material";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import useInput from "../../hooks/useInput";
+import { setUser } from "../../state/user";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+import { toast } from "react-hot-toast";
 
 export const Login = () => {
   const email = useInput();
   const password = useInput();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,8 +26,18 @@ export const Login = () => {
           withCredentials: true,
         }
       )
-      .then((res) => console.log(res))
-      .catch((error) => console.error(error));
+      .then((res) => {
+        dispatch(setUser(res.data));
+        toast.success("User logged in successfully!");
+        navigate("/");
+      })
+      .catch((error) => {
+        if (error.response.status === 401) {
+          toast.error(error.response.data.message);
+        } else {
+          console.log(error);
+        }
+      });
   };
 
   return (
@@ -49,7 +65,7 @@ export const Login = () => {
         }}
       >
         <Typography color="primary" variant="h4">
-          sign in
+          log in
         </Typography>
         <TextField
           label="email"
@@ -72,10 +88,10 @@ export const Login = () => {
           variant="contained"
           sx={{ width: "70%", mt: 3 }}
         >
-          sign in
+          log in
         </Button>
         <Typography color="primary" sx={{ mt: 3 }}>
-          <Link to="/register">Already have an account? Sign up here</Link>
+          <Link to="/register">Already have an account? Register here</Link>
         </Typography>
       </Box>
     </Box>
