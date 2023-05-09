@@ -90,6 +90,7 @@ In order to run this project, you need to first install:
 
 Project Link: https://github.com/jesicayu/hotelinking-frontend
 <br/>
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
