@@ -35,6 +35,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Before you run the frontend of this project, please make sure you have followed the steps of the README of this repository: https://github.com/jesicayu/hotelinking-backend and that you have the project running!
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Features
